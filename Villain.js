@@ -22,9 +22,9 @@ class Villain{
     stroke(255);
     fill(0,0,250);
     
-    // image(heroImg,this.x,this.y,this.width,this.height)
+    image(coronaImg,this.x,this.y,this.width,this.height)
     
-    rect(this.x,this.y,this.width,this.height)
+    //rect(this.x,this.y,this.width,this.height)
       
   }
   

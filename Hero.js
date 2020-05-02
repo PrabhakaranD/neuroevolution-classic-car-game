@@ -85,8 +85,8 @@ class Hero{
     // } else {
     //   fill(0);
     // } 
-    // image(heroImg,this.x,this.y,this.width,this.height)
-    rect(this.x,this.y,this.width,this.height)  
+    image(heroImg,this.x,this.y,this.width,this.height)
+    //rect(this.x,this.y,this.width,this.height)  
     
   }
   
