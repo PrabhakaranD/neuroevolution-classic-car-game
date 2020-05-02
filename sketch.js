@@ -2,7 +2,7 @@ const TOTAL = 200;
 
 var carX = 70;
 var carY = 450;
-var baseSwift = 290;
+var baseSwift = 310;
 var heroes = [];
 var villains = [];
 var score = 0;
@@ -13,6 +13,7 @@ let speed = 5;
 let savedHeroes = [];
 let cycles = 100;
 let slider;
+let track;
 
 function preload() {
   coronaImg = loadImage('Images/Corona.png');
@@ -25,6 +26,7 @@ function setup() {
   for(let i = 0; i < TOTAL; i++) {
     heroes[i] = new Hero();
   }
+  track = new Track();
   // villains.push(new Villain(carX, -120));
 }
 
@@ -85,6 +87,9 @@ function draw() {
   for(let villain of villains) {
       villain.show();
   }
+  
+  track.show();
+  track.move();
   
 }
 
